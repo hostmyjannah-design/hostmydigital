@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toward.Digital - Premium Digital Agency | USA Based</title>
+    <meta name="description" content="Toward.Digital is a USA-based digital agency that completes projects in as little as one day. Specializing in web development, AI agents, and digital marketing.">
+    <meta name="keywords" content="digital agency, web development, AI agents, digital marketing, USA based, fast delivery">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" class="logo-icon">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:var(--color-teal-300);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M8 8 L32 8 L32 12 L12 12 L12 32 L8 32 Z" fill="url(#logoGradient)"/>
+                    <circle cx="20" cy="20" r="8" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <path d="M16 20 L20 24 L28 16" fill="none" stroke="url(#logoGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="logo-text">Toward.Digital</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#ai-agents" class="nav-link">AI Agents</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="contact-info">
+                    <i data-lucide="phone"></i>
+                    <span>347-719-7429</span>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="theme-icon light-icon"></i>
+                    <i data-lucide="moon" class="theme-icon dark-icon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="flag"></i>
+                    <span>Proudly USA Based</span>
+                </div>
+                <h1 class="hero-title">
+                    Premium Digital Solutions
+                    <span class="gradient-text">Delivered Fast</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We complete some projects as soon as one day. Experience the perfect blend of speed, quality, and American innovation.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn--primary btn--lg" onclick="scrollToSection('contact')">
+                        Start Your Project
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <button class="btn btn--outline btn--lg" onclick="scrollToSection('portfolio')">
+                        View Our Work
+                        <i data-lucide="external-link"></i>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">24hr</span>
+                        <span class="stat-label">Fastest Delivery</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2>Innovating at Digital Speed</h2>
+                <p>We're a USA-based digital agency that believes in delivering exceptional results without the wait. Our unique approach combines cutting-edge technology with rapid execution.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-feature">
+                    <div class="feature-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>We complete projects in record time without compromising quality. Some projects delivered in just one day.</p>
+                </div>
+                <div class="about-feature">
+                    <div class="feature-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Every project meets the highest standards of design, functionality, and performance.</p>
+                </div>
+                <div class="about-feature">
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Our USA-based team brings years of experience and cutting-edge expertise to every project.</p>
+                </div>
+                <div class="about-feature">
+                    <div class="feature-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3>Proven Results</h3>
+                    <p>We deliver measurable results that drive growth and success for our clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2>Complete Digital Solutions</h2>
+                <p>From concept to completion, we provide end-to-end digital services that transform your business.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="web-development">
+                    <div class="service-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3>Web Development & Design</h3>
+                    <p>Modern, responsive websites built with cutting-edge technology for optimal performance and user experience.</p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>Fast Loading</li>
+                        <li>SEO Optimized</li>
+                        <li>Modern Tech Stack</li>
+                    </ul>
+                    <button class="btn btn--outline service-cta">Learn More <i data-lucide="arrow-right"></i></button>
+                </div>
+                <div class="service-card" data-service="ai-agents">
+                    <div class="service-icon">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <h3>AI Agent Building & Integration</h3>
+                    <p>Custom AI agents that automate business processes and enhance customer experience with 24/7 availability.</p>
+                    <ul class="service-features">
+                        <li>Lead Qualification</li>
+                        <li>Customer Support</li>
+                        <li>Process Automation</li>
+                        <li>24/7 Availability</li>
+                    </ul>
+                    <button class="btn btn--outline service-cta">Learn More <i data-lucide="arrow-right"></i></button>
+                </div>
+                <div class="service-card" data-service="digital-marketing">
+                    <div class="service-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3>Digital Marketing & SEO</h3>
+                    <p>Data-driven marketing strategies that deliver measurable results and drive sustainable growth.</p>
+                    <ul class="service-features">
+                        <li>Search Engine Optimization</li>
+                        <li>Social Media Marketing</li>
+                        <li>PPC Campaigns</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                    <button class="btn btn--outline service-cta">Learn More <i data-lucide="arrow-right"></i></button>
+                </div>
+                <div class="service-card" data-service="brand-strategy">
+                    <div class="service-icon">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3>Brand Strategy & Design</h3>
+                    <p>Comprehensive branding solutions that make your business stand out in competitive markets.</p>
+                    <ul class="service-features">
+                        <li>Logo Design</li>
+                        <li>Brand Guidelines</li>
+                        <li>Marketing Materials</li>
+                        <li>Brand Strategy</li>
+                    </ul>
+                    <button class="btn btn--outline service-cta">Learn More <i data-lucide="arrow-right"></i></button>
+                </div>
+                <div class="service-card" data-service="ecommerce">
+                    <div class="service-icon">
+                        <i data-lucide="shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce Solutions</h3>
+                    <p>Full-featured online stores that drive sales and customer satisfaction with seamless shopping experiences.</p>
+                    <ul class="service-features">
+                        <li>Custom E-commerce</li>
+                        <li>Payment Integration</li>
+                        <li>Inventory Management</li>
+                        <li>Mobile Commerce</li>
+                    </ul>
+                    <button class="btn btn--outline service-cta">Learn More <i data-lucide="arrow-right"></i></button>
+                </div>
+                <div class="service-card" data-service="mobile-apps">
+                    <div class="service-icon">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android with exceptional user experiences.</p>
+                    <ul class="service-features">
+                        <li>iOS & Android</li>
+                        <li>Cross-Platform</li>
+                        <li>UI/UX Design</li>
+                        <li>App Store Optimization</li>
+                    </ul>
+                    <button class="btn btn--outline service-cta">Learn More <i data-lucide="arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agents Section -->
+    <section id="ai-agents" class="ai-agents">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">AI Automation</span>
+                <h2>Intelligent AI Agents for Business</h2>
+                <p>Transform your business with custom AI agents that work 24/7 to automate processes, qualify leads, and enhance customer experiences.</p>
+            </div>
+            <div class="ai-agents-grid">
+                <div class="ai-agent-card">
+                    <div class="agent-icon">
+                        <i data-lucide="user-check"></i>
+                    </div>
+                    <h3>Lead Qualification Agent</h3>
+                    <p>Automatically scores and qualifies leads based on behavior and responses.</p>
+                    <div class="agent-use-cases">
+                        <span class="use-case">SaaS Companies</span>
+                        <span class="use-case">Real Estate</span>
+                        <span class="use-case">Financial Services</span>
+                        <span class="use-case">B2B Services</span>
+                    </div>
+                    <div class="agent-benefits">
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Increased Conversion Rates</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Time Savings</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Better Lead Quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-agent-card">
+                    <div class="agent-icon">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <h3>Customer Support Chatbot</h3>
+                    <p>AI-powered support that handles common queries and escalates complex issues.</p>
+                    <div class="agent-use-cases">
+                        <span class="use-case">E-commerce</span>
+                        <span class="use-case">Healthcare</span>
+                        <span class="use-case">Tech Support</span>
+                        <span class="use-case">Service Industries</span>
+                    </div>
+                    <div class="agent-benefits">
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Instant Response</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Cost Reduction</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Higher Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-agent-card">
+                    <div class="agent-icon">
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <h3>Appointment Booking Agent</h3>
+                    <p>Automated scheduling system that manages bookings and sends reminders.</p>
+                    <div class="agent-use-cases">
+                        <span class="use-case">Healthcare</span>
+                        <span class="use-case">Beauty & Wellness</span>
+                        <span class="use-case">Consulting</span>
+                        <span class="use-case">Service Providers</span>
+                    </div>
+                    <div class="agent-benefits">
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Reduced No-Shows</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Automated Reminders</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Calendar Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-agent-card">
+                    <div class="agent-icon">
+                        <i data-lucide="shopping-bag"></i>
+                    </div>
+                    <h3>E-commerce Personal Shopper</h3>
+                    <p>Personalized product recommendations based on customer preferences and behavior.</p>
+                    <div class="agent-use-cases">
+                        <span class="use-case">Online Retail</span>
+                        <span class="use-case">Fashion</span>
+                        <span class="use-case">Electronics</span>
+                        <span class="use-case">Home & Garden</span>
+                    </div>
+                    <div class="agent-benefits">
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Higher Sales</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Better Experience</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Increased Loyalty</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-agent-card">
+                    <div class="agent-icon">
+                        <i data-lucide="edit"></i>
+                    </div>
+                    <h3>Content Creation Agent</h3>
+                    <p>Automated content generation for blogs, social media, and marketing materials.</p>
+                    <div class="agent-use-cases">
+                        <span class="use-case">Marketing Agencies</span>
+                        <span class="use-case">Publishers</span>
+                        <span class="use-case">E-commerce</span>
+                        <span class="use-case">Small Businesses</span>
+                    </div>
+                    <div class="agent-benefits">
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Consistent Content</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Time Savings</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>SEO Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-agent-card">
+                    <div class="agent-icon">
+                        <i data-lucide="bar-chart"></i>
+                    </div>
+                    <h3>Data Analysis Agent</h3>
+                    <p>Automated data processing and insight generation from business metrics.</p>
+                    <div class="agent-use-cases">
+                        <span class="use-case">Analytics</span>
+                        <span class="use-case">Business Intelligence</span>
+                        <span class="use-case">Marketing</span>
+                        <span class="use-case">Operations</span>
+                    </div>
+                    <div class="agent-benefits">
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Real-time Insights</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Predictive Analysis</span>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="check"></i>
+                            <span>Decision Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Work</span>
+                <h2>Project Portfolio</h2>
+                <p>Explore our recent projects and see how we've helped businesses transform their digital presence.</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-design">Web Design</button>
+                <button class="filter-btn" data-filter="ai-agents">AI Agents</button>
+                <button class="filter-btn" data-filter="e-commerce">E-commerce</button>
+                <button class="filter-btn" data-filter="mobile-apps">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web-design">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image" style="background: var(--color-bg-1);">
+                            <i data-lucide="monitor"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>TechCorp Website Redesign</h3>
+                        <p>Modern website redesign for a technology company</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Responsive</span>
+                            <span class="tag">Modern</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai-agents">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image" style="background: var(--color-bg-2);">
+                            <i data-lucide="bot"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>HealthBot AI Assistant</h3>
+                        <p>AI-powered healthcare appointment booking and patient support system</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">AI Agent</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="e-commerce">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image" style="background: var(--color-bg-3);">
+                            <i data-lucide="shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>RetailMax E-commerce Platform</h3>
+                        <p>Full-featured e-commerce solution with AI-powered recommendations</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">AI Recommendations</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile-apps">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image" style="background: var(--color-bg-4);">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>FitTracker Mobile App</h3>
+                        <p>Cross-platform fitness tracking application with social features</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Fitness</span>
+                            <span class="tag">Social</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image" style="background: var(--color-bg-5);">
+                            <i data-lucide="palette"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>GreenEnergy Brand Identity</h3>
+                        <p>Complete brand identity package for renewable energy company</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Branding</span>
+                            <span class="tag">Logo Design</span>
+                            <span class="tag">Green Energy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web-design">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image" style="background: var(--color-bg-6);">
+                            <i data-lucide="utensils"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>RestaurantPro Management System</h3>
+                        <p>Restaurant management system with AI-powered inventory tracking</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web App</span>
+                            <span class="tag">Restaurant</span>
+                            <span class="tag">AI Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Client Reviews</span>
+                <h2>What Our Clients Say</h2>
+                <p>Real feedback from businesses that trusted us with their digital transformation.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                        <p>"Toward.Digital delivered our website in just 3 days! The quality was exceptional and exactly what we needed to launch our startup."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>SJ</span>
+                        </div>
+                        <div class="author-info">
+                            <strong>Sarah Johnson</strong>
+                            <span>CEO, TechStart Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                        <p>"Their AI chatbot increased our customer satisfaction by 40% and reduced support costs significantly. Highly recommend their AI services."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>MC</span>
+                        </div>
+                        <div class="author-info">
+                            <strong>Michael Chen</strong>
+                            <span>Marketing Director, RetailMax</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                        <p>"The appointment booking AI agent has streamlined our scheduling process. No more missed appointments and our staff can focus on patient care."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>ER</span>
+                        </div>
+                        <div class="author-info">
+                            <strong>Emily Rodriguez</strong>
+                            <span>Operations Manager, HealthCare Plus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2>Start Your Project Today</h2>
+                <p>Ready to transform your business? Contact our USA-based team and get your project started.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>347-719-7429</p>
+                            <small>Available Mon-Fri 9AM-6PM EST</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>hello@toward.digital</p>
+                            <small>We respond within 2 hours</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>United States</p>
+                            <small>Proudly USA Based</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Response Time</h3>
+                            <p>Same Day</p>
+                            <small>Projects start immediately</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="ea05446a-7ff0-4036-b3b3-1102f1775086">
+                        <input type="hidden" name="subject" value="New Project Inquiry - Toward.Digital">
+                        <input type="hidden" name="from_name" value="Toward.Digital Contact Form">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Interest</label>
+                                <select id="service" name="service" class="form-control">
+                                    <option value="">Select a service</option>
+                                    <option value="web-development">Web Development & Design</option>
+                                    <option value="ai-agents">AI Agent Building</option>
+                                    <option value="digital-marketing">Digital Marketing & SEO</option>
+                                    <option value="brand-strategy">Brand Strategy & Design</option>
+                                    <option value="ecommerce">E-commerce Solutions</option>
+                                    <option value="mobile-apps">Mobile App Development</option>
+                                    <option value="consultation">General Consultation</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Project Budget</label>
+                            <select id="budget" name="budget" class="form-control">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-50k">$15,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                                <option value="discuss">Let's discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details *</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your project, timeline, and specific requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading hidden">
+                                <i data-lucide="loader-2" class="animate-spin"></i>
+                                Sending...
+                            </span>
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" class="logo-icon">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:var(--color-teal-300);stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M8 8 L32 8 L32 12 L12 12 L12 32 L8 32 Z" fill="url(#footerLogoGradient)"/>
+                            <circle cx="20" cy="20" r="8" fill="none" stroke="url(#footerLogoGradient)" stroke-width="2"/>
+                            <path d="M16 20 L20 24 L28 16" fill="none" stroke="url(#footerLogoGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Toward.Digital</span>
+                    </div>
+                    <p>Premium digital solutions delivered at lightning speed. Proudly USA-based.</p>
+                    <div class="footer-contact">
+                        <i data-lucide="phone"></i>
+                        <span>347-719-7429</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#ai-agents">AI Agents</a></li>
+                            <li><a href="#services">Digital Marketing</a></li>
+                            <li><a href="#services">Brand Strategy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#" target="_blank">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#" target="_blank">LinkedIn</a></li>
+                            <li><a href="#" target="_blank">Twitter</a></li>
+                            <li><a href="#" target="_blank">GitHub</a></li>
+                            <li><a href="#" target="_blank">Dribbble</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Toward.Digital. All rights reserved. Made with ❤️ in the USA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Detail Modals -->
+    <div id="serviceModal" class="modal hidden">
+        <div class="modal-backdrop" onclick="closeServiceModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Service Details</h2>
+                <button class="modal-close" onclick="closeServiceModal()">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
